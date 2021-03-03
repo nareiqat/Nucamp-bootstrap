@@ -1,3 +1,6 @@
+html {
+    scroll-behavior: smooth;
+}
 body {
     font-family: "Open Sans", sans-serif;
 }
@@ -34,7 +37,9 @@ header h2 {
     min-height: 200px;
 }
 
-.navbar {
+.navbar-dark {
     background-color: #901CAD;
 }
+
+
 
