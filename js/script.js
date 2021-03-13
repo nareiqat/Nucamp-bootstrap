@@ -15,7 +15,7 @@ $(".carousel").carousel( { interval: 2000 } );
 
 
 $(function() {
-    $('#reserveButton').on("click",() => {
+    $('#reserveButton').on("click",function(){
         $('#reserveModal').modal('show')
         }
     )
@@ -23,7 +23,7 @@ $(function() {
 })
 
 $(function() {
-    $('#loginButton').on("click",() => {
+    $('#loginButton').on("click",function(){
         $('#loginModal').modal('show')
         }
     )
