@@ -11,4 +11,21 @@ $(".carousel").carousel( { interval: 2000 } );
             $("#carouselButton").children("i").addClass("fa-pause"); 
         }
     });
-});            
+}); 
+
+
+$(function() {
+    $('#reserveButton').on("click",() => {
+        $('#reserveModal').modal('show')
+        }
+    )
+
+})
+
+$(function() {
+    $('#loginButton').on("click",() => {
+        $('#loginModal').modal('show')
+        }
+    )
+
+})
