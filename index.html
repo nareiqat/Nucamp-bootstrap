@@ -18,6 +18,7 @@
 
 <body>
     <!-- <a href="#main">Main</a> -->
+    <button class='sr-only' href="#main">Skip to Main</button>
     <header class="jumbotron jumbotron-fluid">
         <div class="container">
             <div class="row">
@@ -28,7 +29,7 @@
                     <h1>NuCamp</h1>
                     <h2>a better way to camp</h2>
                 </div>
-                <div class="col-md-4 col-xl-2 mt-4">
+                <div class="col-md-4 col-xl-2">
                     <button class="btn btn-info btn-lg mt-4">
                         <a id="reserveButton" role="button" class="text-white" style="text-decoration: none;">Reserve Campsite</a>
                     </button>
@@ -38,7 +39,7 @@
     </header>
     <!-- reserve modal -->
     <div id="reserveModal" class="modal fade" role="dialog">
-        <div class="modal-dialog modal-lg" role="document">
+        <div class="modal-dialog modal-lg" role="document" tabindex="0">
             <div class="modal-content">
                 <div class="modal-header bg-info text-white">
                     <h3 class="modal-title">Reserve Campsite</h3>
@@ -47,7 +48,6 @@
                 <div  class="modal-body">
                     <div class="container-fluid">
                         <form id="reserveForm">
-                            <legend></legend>
                             <fieldset>
                                 <div class="form-group row">
                                     <label class="col-sm-6 col-form-label" for="numCampers">Number Of Campers</label>
@@ -73,7 +73,7 @@
                             </div>
                             <!-- Rv or tent -->
                             <div class="form-group row">
-                                <label class="col-sm-6 col-form-label" for="campsiteType">Campsite Type</label>
+                                <label class="col-sm-6 col-form-label" for="">Campsite Type</label>
                                 <div class="col-2 btn-group btn-group-toggle" data-toggle="buttons">
                                     <label class="btn btn-success active">
                                     <input type="radio" name="tent" id="siteTent" autocomplete="off" checked> Tent
@@ -88,7 +88,7 @@
                             <div class="form-group row">
                                 <div class="col">
                                     <button class= "btn btn-secondary" data-dismiss="modal">Cancel</button>
-                                    <button type="submit" class="btn btn-primary form-control" style="width: auto;">Search</button>
+                                    <button type="submit" class="btn btn-primary" style="width: auto;">Search</button>
                                 </div>
                             </div>
                            
